@@ -1,0 +1,13 @@
+# core-app-repo: tarpack-install.yaml
+DEST: /opt/demo_app
+PACK:
+
+- FILES:
+  - Readme.txt
+  DEST: conf
+
+- DIR: bin
+  DEST: bin
+  PACK:
+  - FILES:
+    - myexe
