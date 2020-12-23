@@ -1,5 +1,5 @@
 define_app(
-    myexe
+    myapp
     #SRC_DIR
     SOURCES
         main.cpp

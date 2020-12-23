@@ -1,4 +1,5 @@
-# core-app-repo: tarpack-install.yaml
+# demo-app: tarpack-install.yaml
+
 DEST: /opt/demo_app
 PACK:
 
@@ -10,4 +11,4 @@ PACK:
   DEST: bin
   PACK:
   - FILES:
-    - myexe
+    - myapp
