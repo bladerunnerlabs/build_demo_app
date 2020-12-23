@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "1 5" | ../myapp/myapp
+echo "1 5" | $(dirname $0)/../bin/myapp
 
-read -a num < myapp.txt
+read -a num < ./myapp.txt
 
 if [[ ${#num[*]} != 2 ]]; then
     echo "failed to read 2 nums"

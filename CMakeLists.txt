@@ -28,4 +28,5 @@ use_package(demo_infra REQUIRED)
 
 # Add the sub-tree
 add_subdirectory(myapp)
+add_subdirectory(utest)
 
