@@ -5,12 +5,12 @@ if (NOT BUILD_ROOT_DIR)
     set(BUILD_ROOT_DIR ${PROJECT_SOURCE_DIR}/..)
 endif()
 
-if (NOT BUILD_RUNNER_DIR)
-    set(BUILD_RUNNER_DIR build-runner)
+if (NOT CMAKE_RUNNER_DIR)
+    set(CMAKE_RUNNER_DIR cmake-runner)
 endif()
 
 # include CMake utils
-set(INC_CMAKE_DIR ${BUILD_ROOT_DIR}/${BUILD_RUNNER_DIR}/cmake/include)
+set(INC_CMAKE_DIR ${BUILD_ROOT_DIR}/${CMAKE_RUNNER_DIR}/include)
 include(${INC_CMAKE_DIR}/messages.cmake)
 include(${INC_CMAKE_DIR}/packages.cmake)
 include(${INC_CMAKE_DIR}/targets.cmake)
